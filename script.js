@@ -19,7 +19,7 @@ var difficulty;
 difButtons.forEach(button =>{
     button.addEventListener('click', e =>{
         difficulty = button.value;
-        if(category != undefined && difficulty != undefined){
+        if(category != undefined && difficulty != undefined && startButton.classList.contains('hidden')){
             startButton.classList.toggle('hidden');
         }
     })
@@ -28,7 +28,7 @@ difButtons.forEach(button =>{
 ctgButtons.forEach(button =>{
     button.addEventListener('click', e =>{
         category = button.value
-        if(category != undefined && difficulty != undefined){
+        if(category != undefined && difficulty != undefined && startButton.classList.contains('hidden')){
             startButton.classList.toggle('hidden');
         }
     })
